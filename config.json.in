@@ -1,0 +1,19 @@
+{
+   "site": "starraid",
+   "debugging": "true",
+   "console": true,
+   "database": {
+      "user": "",
+      "pass": "",
+      "name": "",
+      "host": "",
+      "port": ""
+   },
+   "salt": "SomeRandomSalt",
+   "url": "starraid.local",
+   "path": {
+      "temp": "cache/",
+      "view": "app/views/",
+      "model": "app/models/"
+   }
+}
