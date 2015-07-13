@@ -1,2 +1,2 @@
 <?php
-require '/home/xuedi/Projects/web/libs/pedetes/index.php';
+require '../../../libs/pedetes/index.php';
