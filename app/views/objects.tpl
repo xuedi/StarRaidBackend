@@ -1,7 +1,5 @@
 {include file='layout/top.tpl' active='objects'}
 
-
-
 <table cellpadding="10"><tr><td valign="top">
 
 
@@ -18,3 +16,5 @@
 
 
 </td></tr></table>
+
+{include file='layout/bottom.tpl'}

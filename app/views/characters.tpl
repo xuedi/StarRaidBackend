@@ -73,3 +73,5 @@
 
 
 </td></tr></table>
+
+{include file='layout/bottom.tpl'}

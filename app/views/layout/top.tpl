@@ -5,6 +5,8 @@
 </head>
 <body>
 
+<div id="content">
+
 <h1>StarRaidNG manager</h1>
 
 <ul id="tabs">
