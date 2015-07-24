@@ -37,7 +37,7 @@
 
 
 
-<form action="/characters/do" method="get">
+<form action="/characters/do~FC" method="post">
 <input type="hidden" name="id" value="{$character.id}">
 <table border=0 cellpadding="2" cellspacing="3" bgcolor="#eeeeee">
 	<tr bgcolor="#bbbbbb">

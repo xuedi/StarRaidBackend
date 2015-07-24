@@ -22,12 +22,12 @@ class characters extends Pedetes\controller {
 
 	function editAction() {
 		$this->view->assign("action", "edit");
-		$this->view->render('characters.tpl', true);
+		$this->view->render('characters.tpl', true, false);
 	}
 
 	function deleteAction() {
 		$this->view->assign("action", "delete");
-		$this->view->render('characters.tpl', true);
+		$this->view->render('characters.tpl', true, false);
 	}
 
 	function doAction() {
@@ -57,7 +57,7 @@ class characters extends Pedetes\controller {
 		    	$characters->delete($id);
 		        break;
 		}
-		$this->redirect('/characters');
+		$this->redirect('/characters~FC');
 	}
 
 	function _getLoginList() {

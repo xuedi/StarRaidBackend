@@ -1,6 +1,7 @@
 {
    "site": "starraid",
-   "debugging": "true",
+   "debugging": false,
+   "caching": 30,
    "console": true,
    "database": {
       "user": "",
