@@ -14,4 +14,8 @@ class index extends Pedetes\controller {
 		phpinfo();
 	}
 
+	function clearAction() {
+		session_unset();
+	}
+
 }
