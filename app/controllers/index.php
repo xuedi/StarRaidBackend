@@ -16,6 +16,7 @@ class index extends Pedetes\controller {
 
 	function clearAction() {
 		session_unset();
+		die('CLEARED');
 	}
 
 }
