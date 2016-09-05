@@ -20,7 +20,7 @@
 		{assign var="tmp" value="bgcolor='#eeeeaa'"}
 	{/if}
 	<tr>
-		<td><a href="/accounts/edit?id={$characters[mysec].login_id}">1</a></td>
+		<td><a href="/accounts/edit?id={$characters[mysec].login_id}">edit</a></td>
 		<td>{$characters[mysec].id}</td>
 		<td>{$characters[mysec].name}</td>
 		<td>{$characters[mysec].prestige}</td>
@@ -37,7 +37,7 @@
 
 
 
-<form action="/characters/do~FC" method="post">
+<form action="/characters/do" method="post">
 <input type="hidden" name="id" value="{$character.id}">
 <table border=0 cellpadding="2" cellspacing="3" bgcolor="#eeeeee">
 	<tr bgcolor="#bbbbbb">

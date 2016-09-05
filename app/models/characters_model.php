@@ -40,7 +40,8 @@ class characters_model extends \Pedetes\model {
 	}
 
 	public function add($para) {
-		//$this->db->insert("characters", $para);
+		//echo "<pre>".print_r($para,true)."</pre>"; die();
+		$this->db->insert("characters", $para);
 		//TODO, do custom here
 	}
 

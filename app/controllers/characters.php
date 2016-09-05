@@ -9,7 +9,7 @@ class characters extends Pedetes\controller {
 		$characters = $this->loadModel('characters');
 		$this->view->assign("characters", $characters->load());
 		$this->view->assign("loginList", $this->_getLoginList());
-		$id = $this->request->get('id', 'NUMBER');
+		$id = $this->request->get('id', 'NUMBER', null, true);
 		if($id) { // if needed
 			$this->view->assign("character", $characters->load($id));
 		}
@@ -57,7 +57,7 @@ class characters extends Pedetes\controller {
 		    	$characters->delete($id);
 		        break;
 		}
-		$this->redirect('/characters~FC');
+		$this->redirect('/characters');
 	}
 
 	function _getLoginList() {

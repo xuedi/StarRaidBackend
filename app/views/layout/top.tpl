@@ -26,8 +26,8 @@
 		</a>
 	</li>
     <li id="tab4">
-    	<a href="objects.php">
-    		{if $id eq 4}<b>Objects</b>{else}Objects{/if}
+    	<a href="/objects">
+    		{if $active eq 'objects'}<b>Objects</b>{else}Objects{/if}
 		</a>
 	</li>
     <li id="tab5">
