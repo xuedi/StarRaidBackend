@@ -15,6 +15,7 @@
    "path": {
       "temp": "cache/",
       "view": "app/views/",
-      "model": "app/models/"
+      "model": "app/models/",
+      "serverLog": "/path/to/log"
    }
 }

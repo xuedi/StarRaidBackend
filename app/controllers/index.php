@@ -7,7 +7,14 @@ class index extends Pedetes\controller {
 	}
 
 	function indexAction() {
-		$this->view->render('index.tpl', true);
+		$file = $this->ctn['config']['path']['serverLog'];
+		if($file && file_exists($file)) {
+			$log = file_get_contents($file);
+			$this->view->assign("log", $log);
+			$this->view->render('index.tpl', true);
+		} else {
+			$this->error( "Log not found: ".$file );
+		}
 	}
 
 	function infoAction() {

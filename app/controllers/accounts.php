@@ -8,7 +8,7 @@ class accounts extends Pedetes\controller {
 		// common stuff
 		$accounts = $this->loadModel('accounts');
 		$this->view->assign("accounts", $accounts->load());
-		$id = $this->request->get('id', 'NUMBER');
+		$id = $this->request->get('id', 'NUMBER', null, true);
 		if($id) {
 			$this->view->assign("account", $accounts->load($id));
 		}
@@ -32,6 +32,8 @@ class accounts extends Pedetes\controller {
 	function doAction() {
 		$options = array('add','save','delete');
 		$action = $this->request->get('action', 'ARRAY', $options, true);
+		echo "action: $action <br>";
+		//echo "<pre>".print_r($action,true)."</pre>"; die();
 		switch($action) {
 		    case 'add':
 		    	$para = array();

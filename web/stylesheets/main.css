@@ -125,3 +125,8 @@ td.flag {
 	padding: 0.25em 1em;
 	color: #000000;
 }
+
+#logWindow {
+	width: 100%;
+	height: 400px;
+}

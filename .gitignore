@@ -1,4 +1,5 @@
 cache/cache.serialize.txt
 config.json
 cache/smarty/*
+cache/smarty_compiled/*
 
