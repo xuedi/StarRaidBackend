@@ -7,10 +7,10 @@ class objects extends Pedetes\controller {
 	}
 
 	function indexAction() {
-		$accounts = $this->loadModel('accounts');
+		$objects = $this->loadModel('objects');
 		$this->view->assign("action", "index");
-		$this->view->assign("accounts", $accounts->load());
-		$this->view->render('accounts.tpl', true);
+		$this->view->assign("objects", $objects->getList());
+		$this->view->render('objects.tpl', true);
 	}
 
 	function editAction() {
@@ -57,7 +57,7 @@ class objects extends Pedetes\controller {
 		    	$accounts->delete($id);
 		        break;
 		}
-		$this->redirect('/accounts');
+		$this->redirect('/object');
 	}
 
 
