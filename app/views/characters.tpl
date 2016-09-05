@@ -20,7 +20,7 @@
 		{assign var="tmp" value="bgcolor='#eeeeaa'"}
 	{/if}
 	<tr>
-		<td><a href="/accounts/edit?id={$characters[mysec].login_id}">edit</a></td>
+		<td bgcolor="#c5eec5"><a href="/accounts/edit?id={$characters[mysec].login_id}">edit</a></td>
 		<td>{$characters[mysec].id}</td>
 		<td>{$characters[mysec].name}</td>
 		<td>{$characters[mysec].prestige}</td>

@@ -39,6 +39,10 @@ class characters_model extends \Pedetes\model {
 		return $retVal;
 	}
 
+	public function selectList() {
+		return $this->db->selectList("SELECT id, name FROM characters ", array());
+	}
+
 	public function add($para) {
 		//echo "<pre>".print_r($para,true)."</pre>"; die();
 		$this->db->insert("characters", $para);
